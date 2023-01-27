@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ body {
+    height: 100%;
+    background: #eef8ff;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom : 0;
+  height: 200px;
+  background: linear-gradient(to right,#0aa1bd, #046d85, #075e6e);
+  color: white;
+  font-family:sans-serif;
+  padding: 100px 0  30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 15%;
+  padding: 10px;
+}
+.col h3,form{
+  margin-bottom: 10px;
+  position: relative;
+}
+.email-id,.phone-number {
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+.social-icon {
+   color: #fff;
+   transition:color 0.2s;
+   
+}
+.social-icon:hover{
+  color:#ccc;
+}
+.logo-container{
+ max-height: 0em;
+}
