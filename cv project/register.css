@@ -1,5 +1,6 @@
 body{
-	background-color:  black;
+	background-image: linear-gradient(to right, #0aa1bd, #046d85, #075e6e);
+    color: white;
     display: grid;
     place-items: center;
 }
