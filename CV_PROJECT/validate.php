@@ -82,6 +82,18 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
   <title>CERTIFICATE VERIFICATION</title>
 </head>
 <body>
+  <!--Header-->
+  <header class="header">
+    <div class="header-logo-container">
+      <img class="logo" src="./imagelogo.png" alt="Shoppeal Tech" />
+    </div>
+    <nav class="navigation">
+      <a class="navigation-link" href="register.html">Register</a>
+      <a class="navigation-link" href="sign-in.html">Sign In</a>
+    </nav>
+  </header>
+
+
   
   <div id = "container">
     <div id ="main">
@@ -120,8 +132,7 @@ if (isset($_POST['submit'])) {
         <p>CERTIFICATE VALIDATION</p>
 			<input name="textInput" placeholder="Enter Certificate Link or Id" />
             <button type="submit" name="submit"  value="Validate">Validate</button>
-			
-      
+			     
 		</form>
         </div>
     <script>
@@ -139,5 +150,46 @@ if (isset($_POST['submit'])) {
 	</div>
     </div>
   </div>
+
+  <!--Footer-->
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="imagelogo.png" class="logo" alt="img/imagelogo.png">
+        <a href="https://shoppealtech.com/">Visit Our Website Shoppeal.com!</a>
+        <p>Certificate Verifaction portal</p>
+      </div>
+      <div class="col">
+        <h3>Social Media</h3>
+        <div class="social-icon">
+          <a class="social-icon" href="https://www.linkedin.com/company/shoppeal/mycompany/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon></a>
+          <a class="social-icon" href="https://m.facebook.com/profile.php?id=100064126540125&_rdr"
+            target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3>Help Desk</h3>
+        <h3>Your Email-ID</h3>
+        <form>
+          <input type="email" placceholder="Enter your email id" label="Email">
+        </form>
+      </div>
+
+      <div class="col">
+        <h3>Contact Support </h3>
+        <p class="email-id">support@shoppealtech.com</p>
+        <p class="phone-number">+917304663195</p>
+        <p> Kalyan, Maharashtra - 421306</p>
+      </div>
+    </div>
+
+    </div>
+  </footer>
 </body>
 </html>
