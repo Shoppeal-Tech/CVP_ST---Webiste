@@ -9,8 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <h2>Register Form</h2>
-      <form name="registration" onSubmit="return formValidation(event);">
+      <h2>Register</h2>
+      <form
+        name="registration"
+        onsubmit="return formValidation(event);"
+        action="validate.php"
+        method="POST"
+      >
         <div class="name-container">
           <input
             class="firstname"
@@ -76,9 +81,11 @@
         </div>
         <div class="extra-container">
           <p class="extra">
-            I am already Registered,
-            <a href="Signin.html" style="text-decoration: none; color: white"
-              >SignIn</a
+            I am already registered,
+            <a
+              href="sign-in.html"
+              style="text-decoration: none; color: darkblue"
+              >Sign-In</a
             >
           </p>
         </div>
