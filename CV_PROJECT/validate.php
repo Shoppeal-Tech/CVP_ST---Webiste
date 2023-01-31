@@ -152,37 +152,37 @@ if (isset($_POST['submit'])) {
   <footer>
     <div class="row">
       <div class="col">
-        <img src="imagelogo.png" class="logo" alt="img/imagelogo.png">
-        <a href="https://shoppealtech.com/">Visit Our Website Shoppeal.com!</a>
-        <p>Certificate Verifaction portal</p>
+        <img src="imagelogo.png" class="logo-footer" alt="img/imagelogo.png">
+        <div class="home">
+         <a href="https://shoppealtech.com/">HOME</a>
+         <div>
+         <a href="https://shoppealtech.com/aboutus.html">ABOUT</a></div>
+        </div>
+          <p>Certificate Verifaction portal</p>
       </div>
       <div class="col">
         <h3>Social Media</h3>
         <div class="social-icon">
-          <a class="social-icon" href="https://www.linkedin.com/company/shoppeal/mycompany/" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon></a>
-          <a class="social-icon" href="https://m.facebook.com/profile.php?id=100064126540125&_rdr"
-            target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <a href="https://www.linkedin.com/company/shoppeal/mycompany" class="fa fa-linkedin"></a>
+          <a href="https://m.facebook.com/profile.php?id=100064126540125&_rdr" class="fa fa-facebook"></a>
+          <br><br>
+          <a href=" " class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+
         </div>
       </div>
 
       <div class="col">
-        <h3>Help Desk</h3>
-        <h3>Your Email-ID</h3>
-        <form>
-          <input type="email" placceholder="Enter your email id" label="Email">
-        </form>
+        <a href="helpdesk.html"><h3 style="color: white;">Help Desk</h3></a>
+     <p><span class="material-icons">support_agent </span>
+</p>
       </div>
 
       <div class="col">
         <h3>Contact Support </h3>
         <p class="email-id">support@shoppealtech.com</p>
         <p class="phone-number">+917304663195</p>
-        <p> Kalyan, Maharashtra - 421306</p>
+        <p class="address"> Kalyan, Maharashtra - 421306</p>
       </div>
     </div>
 
