@@ -50,7 +50,7 @@ footer {
   background: linear-gradient(to right, #0aa1bd, #046d85, #075e6e);
   color: white;
   font-family: sans-serif;
-  padding: 100px 0 30px;
+  padding: 60px 0 30px;
   border-top-left-radius: 125px;
   font-size: 13px;
   line-height: 20px;
@@ -77,6 +77,7 @@ form {
 }
 
 .email-id,
+.address,
 .phone-number {
   border-bottom: 1px solid #ccc;
   margin: 20px 0;
@@ -95,3 +96,43 @@ form {
 .logo-container {
   max-height: 0em;
 }
+.fa-linkedin {
+  background: #301b8f;
+  color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #b92a10;
+    color: white;
+    
+  }
+.fa {
+  padding: 12px; 
+  font-size: 18px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 2px;
+  }
+  .logo-footer{
+    height: 100%;
+    border-radius: 5px;
+    width: 160px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+
+  }
+  .home {
+    color:white;
+    text-decoration-line: underline;
+
+  }
