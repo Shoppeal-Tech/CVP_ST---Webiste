@@ -8,38 +8,48 @@
     <title>Sign In</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Sign In</h2>
-      <form
-        class="form"
-        name="signin"
-        onsubmit="return formValidation(event);"
-        action="validate.php"
-        method="POST"
-      >
-        <div class="username">
-          <input
-            class="itext"
-            type="text"
-            placeholder="Username"
-            id="uusername"
-            required
-          />
-        </div>
-        <div class="password">
-          <input
-            class="itext"
-            type="password"
-            placeholder="Password"
-            id="upas"
-            required
-          />
-        </div>
-        <a href="forgot_password.html" class="link">Forgot Password</a>
-        <div class="button-container">
-          <button class="submit" type="submit" value="submit">SignIn</button>
-        </div>
-      </form>
+    <header class="header">
+      <div class="header-logo-container">
+        <img class="logo" src="./imagelogo.png" alt="Shoppeal Tech" />
+      </div>
+    </header>
+    <div class="card">
+      <div class="card-image-container">
+        <img src="signin_cover.svg" style="height: 100%; width: 100%" />
+      </div>
+      <div class="container">
+        <h2>Sign In</h2>
+        <form
+          class="form"
+          name="signin"
+          onsubmit="return formValidation(event);"
+          action="validate.php"
+          method="POST"
+        >
+          <div class="username">
+            <input
+              class="itext"
+              type="text"
+              placeholder="Username"
+              id="uusername"
+              required
+            />
+          </div>
+          <div class="password">
+            <input
+              class="itext"
+              type="password"
+              placeholder="Password"
+              id="upas"
+              required
+            />
+          </div>
+          <a href="forgot_password.html" class="link">Forgot Password</a>
+          <div class="button-container">
+            <button class="submit" type="submit" value="submit">SignIn</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="sign-in.js"></script>
   </body>

@@ -8,88 +8,98 @@
     <title>Register</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Register</h2>
-      <form
-        name="registration"
-        onsubmit="return formValidation(event);"
-        action="validate.php"
-        method="POST"
-      >
-        <div class="name-container">
-          <input
-            class="firstname"
-            type="text"
-            placeholder="First Name"
-            id="ufirstname"
-            required
-          />
-          <input
-            class="lastname"
-            type="text"
-            placeholder="Last Name"
-            id="ulastname"
-            required
-          />
-        </div>
-        <div class="username">
-          <input
-            class="itext"
-            type="text"
-            placeholder="Username"
-            id="uusername"
-            required
-          />
-        </div>
-        <div class="email">
-          <input
-            class="itext"
-            type="email"
-            placeholder="Email"
-            id="uemail"
-            required
-          />
-        </div>
-        <div>
-          <select name="gender" id="ugender" class="gender">
-            <option value="none">Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="others">Others</option>
-          </select>
-        </div>
-        <div class="password">
-          <input
-            class="itext"
-            type="password"
-            placeholder="Password"
-            id="upas"
-            required
-          />
-        </div>
-        <div class="confirm-password">
-          <input
-            class="itext"
-            type="password"
-            placeholder="Confirm password"
-            id="uconfirmpass"
-            required
-          />
-        </div>
-        <div class="button-container">
-          <button class="submit" type="submit" value="submit">Submit</button>
-        </div>
-        <div class="extra-container">
-          <p class="extra">
-            I am already registered,
-            <a
-              href="sign-in.html"
-              style="text-decoration: none; color: darkblue"
-              >Sign-In</a
-            >
-          </p>
-        </div>
-      </form>
+    <header class="header">
+      <div class="header-logo-container">
+        <img class="logo" src="./imagelogo.png" alt="Shoppeal Tech" />
+      </div>
+    </header>
+    <div class="card">
+      <div class="card-image-container">
+        <img src="cover.svg" style="height: 100%; width: 100%" />
+      </div>
+      <div class="container">
+        <h2>Register</h2>
+        <form
+          name="registration"
+          onsubmit="return formValidation(event);"
+          action="validate.php"
+          method="POST"
+        >
+          <div class="name-container">
+            <input
+              class="firstname"
+              type="text"
+              placeholder="First Name"
+              id="ufirstname"
+              required
+            />
+            <input
+              class="lastname"
+              type="text"
+              placeholder="Last Name"
+              id="ulastname"
+              required
+            />
+          </div>
+          <div class="username">
+            <input
+              class="itext"
+              type="text"
+              placeholder="Username"
+              id="uusername"
+              required
+            />
+          </div>
+          <div class="email">
+            <input
+              class="itext"
+              type="email"
+              placeholder="Email"
+              id="uemail"
+              required
+            />
+          </div>
+          <div>
+            <select name="gender" id="ugender" class="gender">
+              <option value="none">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="password">
+            <input
+              class="itext"
+              type="password"
+              placeholder="Password"
+              id="upas"
+              required
+            />
+          </div>
+          <div class="confirm-password">
+            <input
+              class="itext"
+              type="password"
+              placeholder="Confirm password"
+              id="uconfirmpass"
+              required
+            />
+          </div>
+          <div class="button-container">
+            <button class="submit" type="submit" value="submit">Submit</button>
+          </div>
+          <div class="extra-container">
+            <p class="extra">
+              I am already registered,
+              <a
+                href="sign-in.html"
+                style="text-decoration: none; color: darkblue"
+                >Sign-In</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="register.js"></script>
   </body>
