@@ -43,6 +43,7 @@ body {
   max-width: 600px; */
   width: 30%;
   background-color: rgb(170, 114, 40);
+  border-radius: 10px;
 }
 .name-container {
   display: flex;
