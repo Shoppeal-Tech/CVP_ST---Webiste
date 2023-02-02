@@ -3,6 +3,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+input::placeholder {
+  font-family: "Poppins";
+}
 
 .header {
   height: 8vh;
@@ -68,7 +71,7 @@ body {
 }
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
+  font-family: "Poppins";
   color: white;
 }
 .itext {
@@ -84,7 +87,7 @@ h2 {
   color: white;
   width: 100%;
   display: block;
-  font-family: sans-serif;
+  font-family: "Poppins";
   margin-top: 8px;
 }
 .button-container {
@@ -98,6 +101,7 @@ h2 {
   align-items: center;
   margin-top: 20px;
   padding: 10px 5px;
+  font-family: "Poppins";
   border-radius: 3px;
   border: none;
   font-weight: 600;
