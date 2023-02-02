@@ -1,10 +1,16 @@
-/* body {
+body {
   height: 100%;
   background: #eef8ff;
-} */
-.body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   background:#eef8ff;
+  margin: 0;
+  padding: 0;
 }
+
 .header {
   height: 8vh;
   background: linear-gradient(to right, #0aa1bd, #046d85, #075e6e);
@@ -41,9 +47,9 @@
 
 footer {
   width: 100%;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  height:200px ;
+  height:200px ; */
   background: linear-gradient(to right, #0aa1bd, #046d85, #075e6e);
   color: white;
   font-family: sans-serif;
@@ -98,6 +104,32 @@ form {
 
 .logo-container {
   max-height: 0em;
+}
+
+@media (max-width: 900px) {
+  .body-container {
+    height: 100%;
+    background: #eef8ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    width: 100%;
+    bottom: unset;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #0aa1bd, #046d85, #075e6e);
+    color: white;
+    font-family: sans-serif;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
 }
 .fa-linkedin {
   background: #301b8f;
@@ -201,9 +233,6 @@ form {
   }
 }
 @media (max-width:900px){
-  footer{
-    bottom:unset;
-  }
   .col{
     flex-basis: 100%;
   }
@@ -211,7 +240,7 @@ form {
     flex-basis: 100%;
   }
   .header{
-    width:auto;
+    width: 100%;
   }
   .navigation{
     bottom:unset;
