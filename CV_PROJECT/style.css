@@ -54,13 +54,13 @@
 .type_writer h2 {
   color: black;
   font-family: "Poppins";
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   margin-bottom: 12px;
 }
-/* The typing effect */
+
 @keyframes typing {
   from {
     width: 0;
@@ -70,7 +70,6 @@
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
   to {
