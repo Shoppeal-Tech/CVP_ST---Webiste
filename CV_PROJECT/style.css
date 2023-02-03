@@ -40,11 +40,61 @@
   font-family: "Poppins";
   color: #ffffff;
 }
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.body_container {
+  width: 35%;
+  padding: 16px;
+}
+.type_writer h2 {
+  color: black;
+  font-family: "Poppins";
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  margin-bottom: 12px;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.heading {
+  text-align: left;
+  margin-bottom: 12px;
+}
+.paragraph {
+  text-align: left;
+}
+.image_container {
+  width: 65%;
+}
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   background: linear-gradient(to right, #0aa1bd, #046d85, #075e6e);
   color: white;
   font-family: "Poppins";
