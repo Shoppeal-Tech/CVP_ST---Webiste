@@ -11,77 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
   <title>CERTIFICATE VERIFICATION</title>
-  <style>
-
-    label, button {
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    input, textarea {
-      border: 3px solid black;
-      padding: .4em 1em;
-      border-radius: 6px;
-    }
-
-    form {
-      display: grid;
-      grid-row-gap: 0px;
-      justify-content: center;
-    }
-
-    button {
-      margin-top: 10px;
-      background: #00b6d8;
-      color: black;
-      padding: 10px 0;
-      border: 0;
-      border-radius: 6px;
-    }
-    .box
-{
-  width: 450px;
-  margin: 4px auto;
-  padding: 2px;
-  background-color: #eaab00; /* gold */
-  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
-  /* background-image: gold, gold, white */
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
-url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
-  background-repeat: no-repeat;
-  background-size: 0 2px, 0 100%, 0% 2px;
-  background-position: top center, top center, bottom center;
-  -webkit-animation: drawBorderFromCenter 4s;
-}
-
-.content
-{
-  background: white;
-  padding: 3em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes drawBorderFromCenter {
-    0% {
-      background-size: 0 2px, 0 0, 100% 100%;
-    }
-    20% {
-      background-size: 100% 2px, 100% 0, 100% 100%;
-    }
-    66%
-    {
-      background-size: 100% 2px, 100% 98%, 100% 100%;
-    }
-    99%
-    {
-      background-size: 100% 2px, 100% 98%, 0 2px;
-    }
-}
-
-</style>
+ 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
