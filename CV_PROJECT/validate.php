@@ -1,18 +1,17 @@
-<?php require_once("config.php");?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9011fb5988.js" crossorigin="anonymous"></script>
   <title>CERTIFICATE VERIFICATION</title>
- 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
   <!--Header-->
@@ -29,26 +28,34 @@
     <?php
 if (isset($_POST['submit'])) {
     $textInput = $_POST['textInput'];
-    $res=mysqli_query($db,"SELECT * from items WHERE id=$textInput");
-    if(mysqli_num_rows($res) > 0) {
-        $k="uploads/";
-        $row=mysqli_fetch_array($res)
+$arg = $textInput;
+//path of the code
+$command = "python C:\Users\Srikanth\Desktop\sam.py " . escapeshellarg($arg);
+$output = array();
+exec($command, $output);
+
+
+
+    if(isset($output[1])) {
+        
+      $arg1 = $output[1];
+      $arg2 = $output[2];
+      $arg3 = $output[0];
+      $arg4 = $arg3 . "." . trim($arg2);
       ?>
       <script>
-        Swal.fire({
+       Swal.fire({
       icon: 'success',
       title: 'Validated',
-      html:
+      html:'<iframe src="<?php echo $arg1; ?>" width="400" height="300"></iframe>,'+
     'You can <b>download certificate</b> by clicking the link, ' +
-    '<a href="download.php?id=' + <?php echo $row['id']; ?> + '">here</a> ',
-      imageUrl: "<?php echo $k.$row['image']; ?>",
-    imageWidth: 550,
-    imageHeight: 225,
-    imageAlt: "Eagle Image",
+    '<a href="download.php?id=<?php echo $arg4; ?>&name=<?php echo $arg1; ?>">here</a> ',
+     
     
       text: 'Your certificate is valid',
     })
       </script>
+
        <?php 
     } else {
       ?><script>
@@ -75,8 +82,8 @@ if (isset($_POST['submit'])) {
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
+   <!-- Footer -->
+   <footer>
     <div class="row">
 
       <div class="col">
@@ -88,9 +95,9 @@ if (isset($_POST['submit'])) {
         <h3>Contact support
         <div class="underline"><span></span></div>
         </h3>
-        <p class="phone-number"> <i1 class="fas fa-phone"></i1><a href="tel:+917304663195" class="phone-number">+91 7304663195</a></p>
-        <p class="email-id"> <i1 class="fas fa-envelope"></i1><a href="mailto:support@shoppealtech.com" class="email-id"> support@shoppealtech.com </a></p>
-        <p> <i1 class="fas fa-map-marked-alt"></i1>Kalyan,Maharashtra - 421306</p>
+        <p class="phone-number"> <i class="fas fa-phone"></i><a href="tel:+917304663195" class="phone-number">+91 7304663195</a></p>
+        <p class="email-id"> <i class="fas fa-envelope"></i><a href="mailto:support@shoppealtech.com" class="email-id"> support@shoppealtech.com </a></p>
+        <p> <i class="fas fa-map-marked-alt"></i>Kalyan,Maharashtra - 421306</p>
         <!-- <p class="address"> Kalyan </p>
         <p class="address">Maharashtra - 421306</p>
         <p class="email-id">support@shoppealtech.com</p>
@@ -102,10 +109,10 @@ if (isset($_POST['submit'])) {
           <div class="underline"><span></span></div>
         </h3>
         <div class="social-icon">
-          <a href="https://www.linkedin.com/company/shoppeal/mycompany" class="fa fa-linkedin"></a>
+          <a href="https://www.linkedin.com/company/shoppeal/mycompany" class="fa fa-linkedin"  ></a>&emsp;
           <a href="https://m.facebook.com/profile.php?id=100064126540125&_rdr" class="fa fa-facebook"></a>
-          <br><br>
-          <a href=" #" class="fa fa-twitter"></a>
+          <br> <br>
+          <a href=" #" class="fa fa-twitter"></a>&emsp;
           <a href="#" class="fa fa-instagram"></a>
          </div>
       </div>
