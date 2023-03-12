@@ -1,11 +1,10 @@
-<?php require_once("config.php");
-$id = $_GET['id'];
-$stmt=mysqli_query($db,"SELECT image from items WHERE id=$id");
-$count=mysqli_num_rows($stmt);
-if($count==1) {
-    $row=mysqli_fetch_array($stmt);
-     $image=$row['image'];
-$file='uploads/'.$image;
+<?php 
+$arg4 = $_GET['id'];
+$file=$arg4;
+$arg1 = $_GET['name'];
+//path of the python code
+$command = "python C:\Users\Srikanth\Desktop\sam1.py " . escapeshellarg($arg1) . " " . escapeshellarg($arg4);
+$output1 = shell_exec($command);
 if (headers_sent()) {
     echo 'HTTP header already sent';
 } else {
@@ -13,12 +12,8 @@ if (headers_sent()) {
         header("Content-Type: application/image");
         header("Content-Disposition: attachment; filename=\"".basename($file)."\"");
         readfile($file);
+        unlink($file);
         exit;  
 }
-echo "<script>window.close();</script>";
-}
-else 
-{
-    echo 'File not found '; 
-} 
+
 ?>
